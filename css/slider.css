@@ -1,0 +1,118 @@
+#sliderwrap{
+    margin-top:26px;
+    width:100%;
+    background:url('../img/city.png') repeat-x;
+}
+.slider{ /* Оболочка слайдера */
+    width:1000px;
+    height:218px;
+    margin:0 auto;
+    position:relative;
+    overflow: hidden;
+    z-index: 9;
+    -webkit-box-shadow:0px 0px 29px grey inset;
+    -moz-box-shadow:0px 0px 29px grey inset;
+    box-shadow:0px 0px 29px grey inset;
+    border-radius:5px;
+    background: url('../img/blur.png');
+}
+.slider:before,
+.slider:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+    bottom:5px;
+    width:5%;
+    height:15%;
+    max-width:50px;
+    -webkit-box-shadow:-80px 0 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:-80px 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow:-80px 0 8px rgba(0, 0, 0, 0.1);
+     -webkit-transform-origin:0 100%;
+        -moz-transform-origin:0 100%;
+         -ms-transform-origin:0 100%;
+          -o-transform-origin:0 100%;
+             transform-origin:0 100%;
+}        
+.slider:before {
+    left:80px;
+    -webkit-transform:skew(25deg);
+       -moz-transform:skew(25deg);
+        -ms-transform:skew(25deg);
+         -o-transform:skew(25deg);
+            transform:skew(25deg);
+}
+.slider:after {
+    right:-80px;
+    -webkit-transform:skew(-25deg);
+       -moz-transform:skew(-25deg);
+        -ms-transform:skew(-25deg);
+         -o-transform:skew(-25deg);
+            transform:skew(-25deg);
+}
+.slider ul,
+ .slider li {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+ }
+ .slider ul {
+ width: 9999px; 
+ }
+ .slider ul:after{
+     content:'';
+     display: block;
+     clear: both;
+     height: 0;
+ }
+ .slider ul li {
+ float: left;
+ width:1000px;
+height:218px;
+ }
+.slider .nav {
+ position: absolute;
+ display:block;
+    right: 20px;
+    bottom: 18px;
+ }
+ .slider .nav span {
+    margin-left: 4px;
+ width: 12px;
+    height: 12px;
+ border-radius: 6px;
+ cursor: pointer;
+ overflow: hidden;
+ display: block;
+ float: left;
+     background:#d6d3d0;
+    box-shadow:1px 2px 2px #979390 inset;
+ }
+ .slider .nav span.on {
+ background:radial-gradient(#ff6b6b, #ab3a3a);
+    box-shadow:none;
+ }
+.girls{
+    position:absolute;
+    left: 36px;
+    float:left;
+}
+.text{
+    width:465px;
+    margin-left: 487px;
+    padding-top:58px;
+    color: #ffffff;;
+    text-shadow:1px 1px 1px #585255;
+}
+.text h2{
+    font-family:myriad;
+    font-size:36px;
+    text-transform: uppercase;
+}
+.text p{
+    font-family: regular;
+    font-size: 13px;
+    padding-top: 12px;
+    line-height: 17px;
+    width: 500px;
+}

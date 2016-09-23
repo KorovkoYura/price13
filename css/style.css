@@ -1,0 +1,31 @@
+@import url('reset.css');
+@import url('header.css');
+@import url('slider.css');
+@import url('addmenu.css');
+@import url('content.css');
+@import url('footer.css');
+@import url('../fonts/myriad/stylesheet.css');
+@import url('../fonts/regular/stylesheet.css');
+
+html, body{
+    height:100%;
+}
+.clr:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+}
+body{
+    position:relative;
+}
+#generalwrapper{
+    min-height:100%;
+    height:auto!important;
+    height:100%;
+    margin-bottom: -120px;
+    padding-bottom: 120px;
+}
+#warning{
+    display:none;
+}

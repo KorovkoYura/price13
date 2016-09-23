@@ -1,0 +1,127 @@
+#headerback{
+    background:url('../img/nebo.png') no-repeat;
+    position: absolute;
+    width: 1200px;
+    height: 168px;
+    left:50%;
+    margin-left:-600px;
+}
+#headerwrap{
+    width:100%;
+    position:relative;
+    margin-top:27px;
+}
+#header{
+    width:1000px;
+    margin:0 auto;
+}
+.logo{
+    position:relative;
+    height:62px;
+}
+.logo a{
+    display:block;
+     float:left;
+}
+.logo img{
+    width:137px;
+}
+.logo p{
+    margin-left:150px;
+    width:180px;
+    font-family: regular;
+    font-size:11px;
+    font-style: italic;
+    color: #7d7d7d;
+    padding-top:7px;
+}
+#search{
+    outline:none;
+    width:230px;
+    height:37px;
+    border-top:2px solid #e1dddd;
+    border-bottom: 3px solid #b7b3b3;
+    border-right: 3px solid #cbc6c6;
+    border-left: 3px solid #cbc6c6;
+    border-radius:20px;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:3;
+    padding-left: 15px;
+}
+#search::-webkit-search-cancel-button{ /* псевдо кнопка очистки */
+-webkit-appearance: none;
+}
+
+#search::-webkit-input-placeholder{
+    color:#c2c2c2;
+    font-family: regular;
+    font-size:12px;
+    letter-spacing: 0.8px;
+}
+#search:-moz-placeholder{
+    color:#c2c2c2;
+    font-family: regular;
+    font-size:12px;
+    letter-spacing: 0.8px;
+}
+#icon{
+    position:absolute;
+    width:15px;
+    top: 12px;
+    right:17px;
+    z-index:4;
+    cursor:pointer;
+}
+#grass{
+    background:url('../img/trava.png') no-repeat;
+    position:absolute;
+    top: -4px;
+    right:-21px;
+    width:159px;
+    height:67px;
+    z-index:2;
+}
+.menu{
+    display:block;
+    box-shadow:0px 28px 28px #f0f3fb;
+    text-align: center;
+}
+.menu li{
+    background:linear-gradient(to bottom, #0a93c9,#0684c3,#0173bc);
+    border-right: 1px solid #0072bc;
+    border-left:1px solid #04a1da;
+    display:inline-block;
+    border-top:3px solid #00bff3;
+}
+.menu li:first-child{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-left:none; 
+}
+.menu li:last-child{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-right:none;
+}
+.menu li a{
+    padding:12px 17px;
+    display:block;
+    color:#ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: regular;
+    font-size:12px;
+    text-shadow: 1px 1px 1px #03659a;
+    min-width:55px;
+}
+.menu li:first-child a{
+    padding-left:25px;
+}
+.menu a:hover{
+    color:#fff200;
+}
+.active{
+    background:linear-gradient(to bottom, #00bff3, #05a2e2, #088bd6);
+}

@@ -1,0 +1,9 @@
+body{
+    display:none;
+}
+#warning{
+    display:block;
+    margin:80 auto;
+    width:800px;
+    font-size:48px;
+}
